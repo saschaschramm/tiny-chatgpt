@@ -4,7 +4,7 @@ The language model of ChatGPT is fine-tuned using reinforcement learning from hu
 It doesn't try to replicate the exact training process of ChatGPT.
 
 ## Toy Problem
-We use a [toy problem](toy_problem.ipynb) to analyze the training algorithm of ChatGPT.
+We use a [toy problem](problem.ipynb) to analyze the training algorithm of ChatGPT.
 
 ## Differences to ChatGPT
 * Use of a toy language model
