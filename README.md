@@ -28,11 +28,12 @@ GAE0 = pow(γλ,0) * δ0 +
        pow(γλ,1) * R2 + γ * V(S2) - V(S1)
 ```
 
-There are two special cases of the GAE, obtained by setting `λ = 0` and `λ = 1`.
+The generalized advantage estimator has a parameter `λ` which can be used to adjust the bias-variance tradeoff.
+There are two special cases of the estimator, obtained by setting `λ = 0` and `λ = 1`.
 
 ```python
-* λ = 0: GAE0 = pow(0,0) * δ0 + pow(0,1) * δ1 = δ0  # 
-* λ = 1: GAE0 = pow(γ,0) * δ0 + pow(γ,1) * δ1
+* λ = 0: GAE0 = pow(0,0) * δ0 + pow(0,1) * δ1 = δ0  # low bias, high variance
+* λ = 1: GAE0 = pow(γ,0) * δ0 + pow(γ,1) * δ1       # high bias, low variance
 ```
 
 ### Differences to PPO

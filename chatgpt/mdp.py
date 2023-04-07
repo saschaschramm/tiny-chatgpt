@@ -14,13 +14,12 @@ def _parity(list: list[int]) -> int:
 
 
 class MDP:
-    def __init__(self, root: StateNode, gamma: float=0, lam: float=0) -> None:
+    def __init__(self, root: StateNode, gamma: float = 0, lam: float = 0) -> None:
         self._root: StateNode = root
         self._root.add()
         self.graph = nx.Graph()
         self.gamma: float = gamma
         self.lam: float = lam
-
 
     def _add_state_node(self, child: StateNode) -> None:
         details: str = "".join([str(x) for x in child.state_details])
